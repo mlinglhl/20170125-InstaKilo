@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		89D58A2F1E39219C00200263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A2E1E39219C00200263 /* main.m */; };
 		89D58A321E39219C00200263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A311E39219C00200263 /* AppDelegate.m */; };
-		89D58A351E39219C00200263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A341E39219C00200263 /* ViewController.m */; };
 		89D58A381E39219C00200263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D58A361E39219C00200263 /* Main.storyboard */; };
 		89D58A3A1E39219C00200263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D58A391E39219C00200263 /* Assets.xcassets */; };
 		89D58A3D1E39219C00200263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D58A3B1E39219C00200263 /* LaunchScreen.storyboard */; };
+		89D58A491E39280B00200263 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A481E39280B00200263 /* CollectionViewCell.m */; };
+		89D58A4C1E39283900200263 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A4B1E39283900200263 /* CollectionReusableView.m */; };
+		89D58A551E392AF200200263 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A541E392AF200200263 /* PhotoObject.m */; };
+		89D58A581E392F9B00200263 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A571E392F9B00200263 /* CollectionView.m */; };
+		89D58A5B1E392FAF00200263 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A5A1E392FAF00200263 /* CollectionViewModel.m */; };
+		89D58A5E1E39301500200263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A5D1E39301500200263 /* ViewController.m */; };
+		89D58A6A1E393DEF00200263 /* PhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A691E393DEF00200263 /* PhotoAlbum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,24 @@
 		89D58A2E1E39219C00200263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89D58A301E39219C00200263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89D58A311E39219C00200263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		89D58A331E39219C00200263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		89D58A341E39219C00200263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		89D58A371E39219C00200263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89D58A391E39219C00200263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D58A3C1E39219C00200263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D58A3E1E39219C00200263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D58A471E39280B00200263 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		89D58A481E39280B00200263 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		89D58A4A1E39283900200263 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		89D58A4B1E39283900200263 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		89D58A531E392AF200200263 /* PhotoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoObject.h; sourceTree = "<group>"; };
+		89D58A541E392AF200200263 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
+		89D58A561E392F9B00200263 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		89D58A571E392F9B00200263 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		89D58A591E392FAF00200263 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		89D58A5A1E392FAF00200263 /* CollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
+		89D58A5C1E39301500200263 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89D58A5D1E39301500200263 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89D58A681E393DEF00200263 /* PhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbum.h; sourceTree = "<group>"; };
+		89D58A691E393DEF00200263 /* PhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +78,20 @@
 			children = (
 				89D58A301E39219C00200263 /* AppDelegate.h */,
 				89D58A311E39219C00200263 /* AppDelegate.m */,
-				89D58A331E39219C00200263 /* ViewController.h */,
-				89D58A341E39219C00200263 /* ViewController.m */,
+				89D58A5C1E39301500200263 /* ViewController.h */,
+				89D58A5D1E39301500200263 /* ViewController.m */,
+				89D58A561E392F9B00200263 /* CollectionView.h */,
+				89D58A571E392F9B00200263 /* CollectionView.m */,
+				89D58A591E392FAF00200263 /* CollectionViewModel.h */,
+				89D58A5A1E392FAF00200263 /* CollectionViewModel.m */,
+				89D58A681E393DEF00200263 /* PhotoAlbum.h */,
+				89D58A691E393DEF00200263 /* PhotoAlbum.m */,
+				89D58A531E392AF200200263 /* PhotoObject.h */,
+				89D58A541E392AF200200263 /* PhotoObject.m */,
+				89D58A471E39280B00200263 /* CollectionViewCell.h */,
+				89D58A481E39280B00200263 /* CollectionViewCell.m */,
+				89D58A4A1E39283900200263 /* CollectionReusableView.h */,
+				89D58A4B1E39283900200263 /* CollectionReusableView.m */,
 				89D58A361E39219C00200263 /* Main.storyboard */,
 				89D58A391E39219C00200263 /* Assets.xcassets */,
 				89D58A3B1E39219C00200263 /* LaunchScreen.storyboard */,
@@ -150,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D58A351E39219C00200263 /* ViewController.m in Sources */,
+				89D58A551E392AF200200263 /* PhotoObject.m in Sources */,
+				89D58A4C1E39283900200263 /* CollectionReusableView.m in Sources */,
+				89D58A581E392F9B00200263 /* CollectionView.m in Sources */,
+				89D58A5E1E39301500200263 /* ViewController.m in Sources */,
 				89D58A321E39219C00200263 /* AppDelegate.m in Sources */,
+				89D58A5B1E392FAF00200263 /* CollectionViewModel.m in Sources */,
+				89D58A491E39280B00200263 /* CollectionViewCell.m in Sources */,
 				89D58A2F1E39219C00200263 /* main.m in Sources */,
+				89D58A6A1E393DEF00200263 /* PhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +343,7 @@
 				89D58A431E39219C00200263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
