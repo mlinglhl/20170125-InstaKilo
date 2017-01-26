@@ -12,4 +12,6 @@
 @interface CollectionViewModel : NSObject <UICollectionViewDataSource>
 @property BOOL toggled;
 - (void) toggleSection;
+- (UIImage*) getPhoto:(NSIndexPath*)path;
+- (void) removePhotoAtIndex: (NSIndexPath*)path;
 @end

@@ -24,6 +24,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bsk-gy-Grh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="RDh-iG-NsO">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
@@ -40,9 +41,11 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-Z8-8OT">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <gestureRecognizers/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="OSY-Z8-8OT" secondAttribute="bottom" id="0ei-78-q1A"/>
                                             <constraint firstAttribute="trailing" secondItem="OSY-Z8-8OT" secondAttribute="trailing" id="CUF-rV-IHt"/>
@@ -77,6 +80,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="pJA-WF-1uI" id="SaG-hI-lVy"/>
                                     <outlet property="delegate" destination="pJA-WF-1uI" id="BUf-un-T4D"/>
+                                    <outletCollection property="gestureRecognizers" destination="AdG-l9-3hs" appends="YES" id="52M-5D-KxR"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -111,8 +115,45 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qp-AX-1to" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="AdG-l9-3hs">
+                    <connections>
+                        <action selector="removePhoto:" destination="pJA-WF-1uI" id="Qbi-Iq-tDQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-455.19999999999999" y="-283.80809595202402"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="V70-WZ-uLa">
+            <objects>
+                <viewController id="Rqw-Dc-3rL" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jBY-aA-OFl"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDB-Uk-2ih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vdZ-7a-ClA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-01-ZXk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e9y-01-ZXk" secondAttribute="trailing" id="A7B-Qg-NmZ"/>
+                            <constraint firstItem="bDB-Uk-2ih" firstAttribute="top" secondItem="e9y-01-ZXk" secondAttribute="bottom" id="QR9-Yp-Ufc"/>
+                            <constraint firstItem="e9y-01-ZXk" firstAttribute="leading" secondItem="vdZ-7a-ClA" secondAttribute="leading" id="asV-sJ-g7a"/>
+                            <constraint firstItem="e9y-01-ZXk" firstAttribute="top" secondItem="jBY-aA-OFl" secondAttribute="bottom" id="pi3-XZ-S4w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="e9y-01-ZXk" id="tdb-GB-vJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWb-zh-1od" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="-278.41079460269867"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DZG-Jc-wcy">

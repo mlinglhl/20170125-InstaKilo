@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CollectionViewModel.h"
 #import "CollectionReusableView.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 @property CollectionViewModel *model;
@@ -25,26 +26,30 @@
     CGFloat width = self.view.frame.size.width/2;
     CGSize size = CGSizeMake(width, width);
     layout.itemSize = size;
-
 }
+
 - (IBAction)toggleSegment:(UISegmentedControl *)sender {
     [self.model toggleSection];
     [self.photoCollectionView reloadData];
 }
+- (IBAction)removePhoto:(UITapGestureRecognizer *)sender {
+    if ([self.photoCollectionView indexPathsForSelectedItems].count > 0) {
+    NSArray *array = [self.photoCollectionView indexPathsForSelectedItems];
+    [self.model removePhotoAtIndex:array[0]];
+    [self.photoCollectionView reloadData];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"DetailViewController"]) {
+        DetailViewController *dvc = segue.destinationViewController;
+        NSArray *paths = [self.photoCollectionView indexPathsForSelectedItems];
+        NSIndexPath *path = paths[0];
+        dvc.photo = [self.model getPhoto:path];
+    }
 }
-*/
-
 @end

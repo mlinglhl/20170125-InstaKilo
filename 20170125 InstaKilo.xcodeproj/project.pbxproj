@@ -19,6 +19,7 @@
 		89D58A5B1E392FAF00200263 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A5A1E392FAF00200263 /* CollectionViewModel.m */; };
 		89D58A5E1E39301500200263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A5D1E39301500200263 /* ViewController.m */; };
 		89D58A6A1E393DEF00200263 /* PhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A691E393DEF00200263 /* PhotoAlbum.m */; };
+		89D58A6D1E395BF500200263 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D58A6C1E395BF500200263 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		89D58A5D1E39301500200263 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		89D58A681E393DEF00200263 /* PhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbum.h; sourceTree = "<group>"; };
 		89D58A691E393DEF00200263 /* PhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbum.m; sourceTree = "<group>"; };
+		89D58A6B1E395BF500200263 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		89D58A6C1E395BF500200263 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				89D58A311E39219C00200263 /* AppDelegate.m */,
 				89D58A5C1E39301500200263 /* ViewController.h */,
 				89D58A5D1E39301500200263 /* ViewController.m */,
+				89D58A6B1E395BF500200263 /* DetailViewController.h */,
+				89D58A6C1E395BF500200263 /* DetailViewController.m */,
 				89D58A561E392F9B00200263 /* CollectionView.h */,
 				89D58A571E392F9B00200263 /* CollectionView.m */,
 				89D58A591E392FAF00200263 /* CollectionViewModel.h */,
@@ -185,6 +190,7 @@
 				89D58A581E392F9B00200263 /* CollectionView.m in Sources */,
 				89D58A5E1E39301500200263 /* ViewController.m in Sources */,
 				89D58A321E39219C00200263 /* AppDelegate.m in Sources */,
+				89D58A6D1E395BF500200263 /* DetailViewController.m in Sources */,
 				89D58A5B1E392FAF00200263 /* CollectionViewModel.m in Sources */,
 				89D58A491E39280B00200263 /* CollectionViewCell.m in Sources */,
 				89D58A2F1E39219C00200263 /* main.m in Sources */,

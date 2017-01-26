@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate>
+@interface ViewController : UIViewController <UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *photoCollectionView;
 
 @end

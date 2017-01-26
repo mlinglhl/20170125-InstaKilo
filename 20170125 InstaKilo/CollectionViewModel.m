@@ -63,4 +63,21 @@
     self.toggled = !self.toggled;
 }
 
+- (UIImage*) getPhoto:(NSIndexPath*)path {
+    PhotoAlbum *album = self.activeCategoryArray[path.section];
+    PhotoObject *photoObject = album.photoArray[path.row];
+    return photoObject.photo;
+}
+
+- (void) removePhotoAtIndex: (NSIndexPath*)path {
+    NSMutableArray *array = [[NSMutableArray alloc] initWithArray:self.activeCategoryArray[path.section].photoArray];
+    [array removeObjectAtIndex:path.row];
+    self.activeCategoryArray[path.section].photoArray = array;
+    if (array.count == 0) {
+        NSMutableArray *array = [[NSMutableArray alloc] initWithArray:self.activeCategoryArray];
+        [array removeObjectAtIndex:path.section];
+        self.activeCategoryArray = array;
+    }
+}
+
 @end
